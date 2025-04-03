@@ -4,83 +4,19 @@
     <meta charset="UTF-8">
     <title>Rapport de stage - Kathleen</title>
     <meta name="description" content="Rapport de stage HTML/CSS réalisé pendant une semaine de découverte.">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>Rapport de Stage - Kathleen</h1>
-    <p>Collège Jean Moulin - Stage chez Lucas Parchap</p>
-  </header>
-
   <nav>
-    <ul>
-      <li><a href="#presentation">Entreprise</a></li>
-      <li><a href="#missions">Missions</a></li>
-      <li><a href="#apprentissage">Ce que j’ai appris</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-
-    <section id="presentation">
-      <h2>Présentation de l’entreprise</h2>
-      <p>L’entreprise <strong>CodeFactory</strong> est spécialisée dans le <em>développement web</em>.</p>
-      <img src="images/icdc.png" alt="Locaux de l'entreprise" width="300">
-    </section>
-
-    <section id="missions">
-      <h2>Mes missions</h2>
-      <ul>
-        <li>Observer le travail d’un développeur</li>
-        <li>Créer une page HTML simple</li>
-        <li>Découvrir le fonctionnement d’un site web</li>
+    <div class="nav-container">
+      <a href="index.html"><img src="images/icdc.png" alt="Logo CodeFactory" class="nav-logo"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Présentation</a></li>
+        <li><a href="#planing">Planing</a></li>
+        <li><a href="#questions">Questions / Réponses</a></li>
+        <li><a href="remerciements.html">Remerciements</a></li>
       </ul>
-    </section>
-
-    <section id="apprentissage">
-      <h2>Ce que j’ai appris</h2>
-      <p>J’ai appris à utiliser des balises comme :</p>
-      <ol>
-        <li><code>&lt;h1&gt; à &lt;h6&gt;</code> pour les titres</li>
-        <li><code>&lt;p&gt;</code> pour les paragraphes</li>
-        <li><code>&lt;img&gt;</code> pour les images</li>
-        <li><code>&lt;a&gt;</code> pour les liens</li>
-      </ol>
-
-      <h3>Exemple de tableau :</h3>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Jour</th>
-            <th>Tâche</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Lundi</td>
-            <td>Découverte de l’entreprise</td>
-          </tr>
-          <tr>
-            <td>Mardi</td>
-            <td>Initiation au HTML</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <blockquote>“J’ai adoré créer ma première page web !”</blockquote>
-    </section>
-
-    <section id="contact">
-      <h2>Me contacter</h2>
-      <p>Vous pouvez envoyer un mail à : <a href="mailto:maelys@exemple.com">maelys@exemple.com</a></p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 - Rapport de Stage de Kathleen - Merci à Lucas pour son aide 🙌</p>
-  </footer>
-
+    </div>
+  </nav>
 </body>
 </html>
