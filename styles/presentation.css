@@ -9,13 +9,26 @@
 /* Présentation */
 #resume {
     width: 50%;
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     padding-right: 20px;
+    overflow: hidden;
+}
+#resume-content {
+    overflow-y: auto;
+    flex: 1;
     scrollbar-width: thin;
     scrollbar-color: #e74c3c transparent;
 }
-
+#resume-content::-webkit-scrollbar {
+    width: 8px;
+}
+#resume-content::-webkit-scrollbar-thumb {
+    background-color: #e74c3c;
+    border-radius: 4px;
+}
 #resume h2 {
+    flex-shrink: 0;
     font-size: 2em;
     color: #0066cc;
     text-align: center;
@@ -33,22 +46,29 @@
     border-radius: 4px;
 }
 
+/* Nouveau bloc scrollable uniquement pour le texte */
 #resume p {
+    overflow-y: auto;
+    flex: 1;
     font-size: 1.1em;
     line-height: 1.6;
     background-color: #1e1e1e;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    scrollbar-width: thin;
+    scrollbar-color: #e74c3c transparent;
 }
 
-#resume::-webkit-scrollbar {
+/* Scrollbar personnalisée */
+#resume p::-webkit-scrollbar {
     width: 8px;
 }
-#resume::-webkit-scrollbar-thumb {
+#resume p::-webkit-scrollbar-thumb {
     background-color: #e74c3c;
     border-radius: 4px;
 }
+
 
 /* Colonne droite */
 .right-column {
@@ -108,6 +128,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 #faq h2 {
     text-align: center;
@@ -126,7 +147,8 @@
 }
 
 .faq-container {
-    max-height: calc(100vh - 320px);
+    flex: 1;
+    min-height: 0;
     overflow-y: auto;
     padding-right: 10px;
     margin-bottom: 20px;
