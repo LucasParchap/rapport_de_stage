@@ -1,46 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
-.rem-intro {
+#remerciements {
+    color: #f0f0f0;
+    padding-bottom: 40px;
+}
+
+#remerciements .rem-intro {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     position: relative;
 }
-.rem-intro p {
+
+#remerciements .rem-intro p {
     font-family: 'Dancing Script', cursive;
-    font-size: 1.8em;
-    text-align: center;
+    font-size: 2.8em;
     color: #e74c3c;
     font-weight: 500;
     margin: 30px auto;
     padding: 0 20px;
-    max-width: 800px;
+    max-width: none;
     font-style: italic;
 }
-.rem-intro::after {
-content: "";
-display: block;
-width: 60px;
-height: 3px;
-background-color: #e74c3c;
-margin: 12px auto 0 auto;
-border-radius: 4px;
+
+#remerciements .equipe {
+    margin-bottom: 50px;
 }
 
-.equipe {
-    margin-bottom: 50px;
-  }
-  
-  .equipe-nom {
+#remerciements .equipe-nom {
     text-align: center;
-    font-size: 1.6em;
-    color: #444;
+    font-size: 1.8em;
+    color: #f0f0f0;
     margin-bottom: 20px;
-    position: relative;
     font-weight: 600;
-  }
-  
+}
 
-.cards-container {
+#remerciements .equipe-nom::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #e74c3c;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+#remerciements .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 24px;
@@ -49,45 +53,37 @@ border-radius: 4px;
     padding: 20px;
 }
 
-.card {
-    background-color: #fff;
-    border: 2px solid rgba(231, 76, 60, 0.4); /* rouge adouci */
+#remerciements .card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
     border-radius: 12px;
     padding: 20px 16px;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04); /* ombre plus douce */
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
-  }
-  
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
-    border-color: #e74c3c; /* accentuation au survol */
-  }
+}
 
-.card .prenom {
-    font-size: 1.1em;
+#remerciements .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    border-color: #e74c3c;
+}
+
+#remerciements .card .prenom {
+    font-size: 1.2em;
     font-weight: bold;
-    color: #0066cc;
+    color: #3399ff;
 }
 
-.card .nom {
+#remerciements .card .nom {
     font-size: 1em;
-    color: #444;
+    color: #ccc;
 }
 
-.card:hover .nom {
+#remerciements .card:hover .nom {
     color: #e74c3c;
-  }
-  
-
-
-
-
-  
-  
-  
+}
